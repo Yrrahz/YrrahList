@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-        public void buttonPressed(View view){
+    public void buttonPressed(View view){
         Toast.makeText(getApplicationContext(),"Button is pressed!", Toast.LENGTH_SHORT).show();
 
         Intent intent = new Intent(this, ListWriting.class);

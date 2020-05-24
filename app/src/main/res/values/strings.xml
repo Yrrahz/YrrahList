@@ -2,6 +2,8 @@
     <string name="app_name">YrrahList</string>
     <string name="button">Button</string>
 
+    <string name="typehere">Type here…</string>
+
     <string name="settings">Settings</string>
     <string name="newList">New List</string>
     <string name="openList">Open List</string>
