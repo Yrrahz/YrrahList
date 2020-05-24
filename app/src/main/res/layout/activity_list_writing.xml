@@ -6,23 +6,27 @@
     android:layout_height="match_parent"
     tools:context=".ListWriting">
 
-    <TextView
-        android:id="@+id/ListWritingTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/app_name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <EditText
         android:id="@+id/EditTextView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:hint="@string/typehere"
-        android:inputType="textMultiLine"
+        android:layout_marginStart="24dp"
         android:autofillHints="@string/typehere"
         android:gravity="top"
+        android:hint="@string/typehere"
+        android:inputType="textMultiLine"
+        android:textSize="24sp"
+        android:lineSpacingExtra="10sp"
+        app:layout_constraintStart_toEndOf="@+id/ListCounterView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ListCounterView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="24sp"
+        android:lineSpacingExtra="10sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ListWritingTextView" />
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
